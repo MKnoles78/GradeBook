@@ -36,4 +36,26 @@ public class GradeBook {
 		outputBarChart();
 	}
 
+	// find minimum grade
+	public int getMinimum() {
+		int lowGrade = grades[0]; // assume grades[0] is smallest
+
+		// loop through grades array
+		for (int grade : grades) {
+			// if grade lower than lowGrade, assign it to lowGrade
+			if (grade < lowGrade) {
+				lowGrade = grade; // new lowest grade
+			}
+		}
+
+		return lowGrade;
+	}
+
+	// TODO find maximum grade
+	public int getMaximum() {
+
+	}
+
+	// TODO determine average grade for test
+
 }
