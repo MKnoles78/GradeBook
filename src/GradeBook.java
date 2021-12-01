@@ -51,8 +51,17 @@ public class GradeBook {
 		return lowGrade;
 	}
 
-	// TODO find maximum grade
+	// find maximum grade
 	public int getMaximum() {
+		int highGrade = grades[0]; // assume grades [0] is largest
+
+		// loop through grades array
+		for (int grade : grades) {
+			// if grade greater than highGrade, assign it to highGrade
+			if (grade > highGrade) {
+				highGrade = grade; // new highest grade
+			}
+		}
 
 	}
 
