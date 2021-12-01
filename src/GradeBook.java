@@ -62,9 +62,21 @@ public class GradeBook {
 				highGrade = grade; // new highest grade
 			}
 		}
-
+		return highGrade;
 	}
 
-	// TODO determine average grade for test
+	// determine average grade for test
+	public double getAverage() {
+		int total = 0;
+
+		// sum grades for one student
+		for (int grade : grades) {
+			total += grade;
+		}
+		// return average of grades
+		return (double) total / grades.length;
+	}
+
+	// output bar chart displaying grade distribution
 
 }
