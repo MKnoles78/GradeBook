@@ -5,10 +5,15 @@ public class GradeBookRefactor {
 	private int[] grades; // array of student grades
 
 	// constructor
-	public GradeBookRefactor(String courseName, int[] grades) {
-		this.courseName = courseName;
-		this.grades = grades;
-	}
+	public class GradeBookRefactor {
+		private String courseName; // name of course this grade book represents
+		private int[][] grades; // two-dimensional array of student grades
+		
+		// two-argument constructor initializes courseName and grades array
+		public GradeBookRefactor (String courseName, int[][] grades) {
+			this.courseName = courseName;
+			this.grades = grades; 
+		}
 
 	// method to set the course name
 	public void setCourseName(String courseName) {
