@@ -31,7 +31,7 @@ public class GradeBookRefactor {
 		outputGrades();
 
 		// call methods getMinimum and getMaximum
-		System.out.printf("Lowest grade is %d%nHighest grade is %d%n%n", getMinimum(), getMaximum());
+		System.out.printf("%n%s %d%n%s %d%n%n", "Lowest grade in the grade book is", getMinimum(), "Highest grade in the grade book is", getMaximum());
 
 		// call outputBarChart to print grade distribute chart
 		outputBarChart();
