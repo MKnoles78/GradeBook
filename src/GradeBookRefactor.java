@@ -73,6 +73,19 @@ public class GradeBookRefactor {
 			return highGrade;
 		}
 
+		// determine average grade for particular set of grades
+		public double getAverage(int[] setOfGrades) {
+			int total = 0;
+			// sum grades for one student
+			for (int grade : setOfGrades) {
+				totat += grade;
+			}
+			// return average of grades
+			return (double) total / setOfGrades.length;
+		}
+
+		// output bar chart displaying overall grade distribution
+
 		int lowGrade = grades[0]; // assume grades[0] is smallest
 
 		// loop through grades array
