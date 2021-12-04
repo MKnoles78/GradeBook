@@ -85,49 +85,6 @@ public class GradeBookRefactor {
 		}
 
 		// output bar chart displaying overall grade distribution
-
-		int lowGrade = grades[0]; // assume grades[0] is smallest
-
-		// loop through grades array
-		for(
-		int grade:grades)
-		{
-			// if grade lower than lowGrade, assign it to lowGrade
-			if (grade < lowGrade) {
-				lowGrade = grade; // new lowest grade
-			}
-		}
-
-		return lowGrade;
-	}
-
-	// find maximum grade
-	public int getMaximum() {
-		int highGrade = grades[0]; // assume grades [0] is largest
-
-		// loop through grades array
-		for (int grade : grades) {
-			// if grade greater than highGrade, assign it to highGrade
-			if (grade > highGrade) {
-				highGrade = grade; // new highest grade
-			}
-		}
-		return highGrade;
-	}
-
-	// determine average grade for test
-	public double getAverage() {
-		int total = 0;
-
-		// sum grades for one student
-		for (int grade : grades) {
-			total += grade;
-		}
-		// return average of grades
-		return (double) total / grades.length;
-	}
-
-	// output bar chart displaying grade distribution
 	public void outputBarChart() {
 		System.out.println("Grade distribution:");
 
