@@ -91,9 +91,11 @@ public class GradeBookRefactor {
 		// stores frequency of grades in each range of 10 grades
 		int[] frequency = new int[11];
 
-		// for each grade, increment the appropriate frequency
-		for (int grade : grades) {
-			++frequency[grade / 10];
+		// for each grade in GradeBook, increment the appropriate frequency
+		for (int[] studentGrades : grades) {
+			for (int grade: studentGrades) {
+				++frequency[grade / 10];
+			}
 		}
 
 		// for each grade frequency, print bar in chart
